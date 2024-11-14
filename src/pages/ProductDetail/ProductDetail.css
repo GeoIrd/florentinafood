@@ -1,0 +1,143 @@
+.product-detail .photo {
+  position: sticky;
+  top: 0;
+  height: 30vh;
+}
+
+.product-detail .photo img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+
+  object-fit: cover;
+}
+
+.product-detail .photo .profile {
+  position: absolute;
+
+  width: 90%;
+  bottom: 20%;
+
+  padding: 10px;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.product-detail .photo .profile .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-detail .photo .profile .name span {
+  color: white;
+  font-weight: 600;
+}
+
+.product-detail .photo .profile .name img {
+  height: 50px;
+  width: 50px;
+
+  border-radius: 50%;
+
+  margin-bottom: 0px;
+}
+
+.product-detail .photo .profile .follow {
+  padding: 10px 20px;
+  background: var(--clr-primary);
+  border-radius: 100px;
+  color: white;
+  font-weight: 600;
+}
+
+.product-detail .content {
+  border-radius: 20px;
+  padding: 2rem;
+
+  background: #fcfcfc;
+
+  margin-top: -1rem;
+  position: relative;
+}
+
+.product-detail .content::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 3rem;
+  height: 4px;
+
+  background: rgb(0, 0, 0);
+
+  border-radius: 10px;
+
+  opacity: 0.1;
+}
+
+.product-detail .content .descr {
+  opacity: 0.6;
+  margin-block: 2rem;
+}
+
+.product-detail .content .macro .title {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+}
+
+.product-detail .content .macro .title .kcal {
+  opacity: 0.6;
+}
+
+.product-detail .content .macro .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  margin-bottom: 0.6rem;
+
+  font-weight: 600;
+
+  background: white;
+}
+
+.product-detail .content .macro .icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-detail .content .macro .icon img {
+  height: 40px;
+  width: 40px;
+}
+
+.product-detail .content .disclaimer p {
+  opacity: 0.4;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  padding: 1rem;
+}

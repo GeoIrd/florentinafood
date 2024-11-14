@@ -1,0 +1,39 @@
+header {
+  height: 100dvh;
+  width: 100%;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0) 90%),
+    url("https://res.cloudinary.com/dsqwnuyiw/image/upload/v1730828669/florentinafood/home-img.webp");
+
+  background-size: cover;
+}
+
+header .content {
+  height: 100dvh;
+
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 2rem;
+
+  padding: 2rem;
+}
+
+header .content h1 {
+  font-size: 2.4rem;
+}
+
+header .content p {
+  font-weight: 300;
+}
+
+header .content .btn {
+  width: 100%;
+  background-color: var(--clr-primary);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  font-weight: 800;
+}

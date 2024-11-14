@@ -1,0 +1,168 @@
+.products {
+  padding: 2rem 1rem;
+  overflow-x: hidden;
+
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.products .content .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products .content .title h1 {
+  color: var(--clr-primary);
+}
+
+.products .content .title .logo {
+  height: 60px;
+  width: 60px;
+
+  border-radius: 1rem;
+}
+
+/* SEARCH */
+
+.search {
+  margin-block: 2rem;
+}
+
+.search input {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  width: 100%;
+
+  font-size: 1rem;
+
+  background: #efefef;
+  border: 0;
+}
+
+/* WEEKLY */
+
+.weekly {
+  margin-block: 2rem;
+
+  margin-bottom: 15vh;
+}
+
+.weekly-product {
+  width: 100%;
+  height: 20vh;
+
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  background-image: linear-gradient(rgba(255, 0, 0, 0) 40%, rgb(0, 0, 0)),
+    url("https://res.cloudinary.com/dsqwnuyiw/image/upload/v1730834470/florentinafood/somon.jpg");
+
+  background-size: cover;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.weekly-product h3 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.weekly-product .price {
+  font-size: 1.2rem;
+
+  font-weight: 600;
+  color: var(--clr-primary);
+}
+
+/* ALL */
+
+.product-list {
+  overflow-x: scroll;
+
+  padding-block: 1rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.product-list .product-card {
+  min-width: 300px;
+  max-width: 300px;
+
+  height: 30vh;
+
+  background: #f2f2f2;
+
+  border-radius: 1rem;
+
+  position: relative;
+}
+
+.product-list .empty-category {
+  height: 30vh;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.product-list .empty-category img {
+  height: 30vh;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+
+  object-fit: cover;
+}
+
+.product-list .product-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+
+  object-fit: cover;
+}
+
+.product-list .product-card .text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  /* From https://css.glass */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  border-radius: 16px;
+
+  height: 5rem;
+  width: calc(100%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1rem;
+}
+
+.product-list .product-card .text .title {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.product-list .product-card .text .price {
+  font-size: 1.2rem;
+
+  font-weight: 600;
+  color: var(--clr-primary);
+}
+
+@media screen and (width > 520px) {
+  .products {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem;
+  }
+}

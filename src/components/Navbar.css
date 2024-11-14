@@ -1,0 +1,50 @@
+nav {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 2rem;
+
+  border-radius: 100px;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  width: 90%;
+  max-width: 520px;
+  height: 14vh;
+
+  z-index: 20;
+
+  background: rgb(255, 255, 255);
+}
+
+nav .links {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .links li {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  font-size: 0.8rem;
+}
+
+nav .links li img {
+  width: 50px;
+  height: 50px;
+
+  padding: 10px;
+  border-radius: 50%;
+}
+
+nav .links li.active img {
+  background: rgb(232, 232, 232);
+}
